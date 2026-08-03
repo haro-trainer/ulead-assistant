@@ -72,7 +72,7 @@ footer a{color:#A78BFA}
 <header>
 <h1>🎓 AI Academic Dean</h1>
 <p>Sistema Inteligente para Diseño Curricular Universitario</p>
-<p style="margin-top:10px;font-size:.88em;opacity:.85">7 Skills + 3 Prompts Maestros · Claude Desktop &amp; ChatGPT</p>
+<p style="margin-top:10px;font-size:.88em;opacity:.85">8 Skills + 3 Prompts Maestros · Claude Desktop &amp; ChatGPT</p>
 </header>
 <div class="container">
 
@@ -112,6 +112,7 @@ footer a{color:#A78BFA}
 <tr><td>1</td><td>university-syllabus-designer</td><td>PROMPT_MAESTRO_SYLLABUS</td><td>Sílabo + Matriz + Cronograma</td><td>20 min</td></tr>
 <tr><td>2</td><td>course-assessment-activity-designer</td><td>PROMPT_MAESTRO_ACTIVIDADES</td><td>Instrucciones + Rúbrica + Solución</td><td>15 min × n</td></tr>
 <tr><td>3</td><td>session-content-builder</td><td>PROMPT_MAESTRO_SESION</td><td>Slides + Guía + Quiz + Notas</td><td>25 min × n</td></tr>
+<tr><td>3B</td><td>speaker-notes-command-center</td><td>(en el chat)</td><td>Speaker notes + mensajes clave + transiciones + cues</td><td>15 min × n</td></tr>
 <tr><td>4</td><td>exercise-designer</td><td>(en el chat)</td><td>Set Profesor + Set Estudiante</td><td>20 min</td></tr>
 <tr><td>5</td><td>academic-grader</td><td>(en el chat)</td><td>Calificación + Retroalimentación</td><td>10 min</td></tr>
 </table>
@@ -140,15 +141,15 @@ footer a{color:#A78BFA}
 <p>Ir a <a href="https://claude.ai/download" target="_blank">claude.ai/download</a> → instalar para tu SO → loguearte.</p>
 </div>
 
-<div class="stp"><span class="sn">2</span><h4>Descargar los 7 Skills</h4>
-<p>Click en cada botón. Cada uno descarga un ZIP con el skill completo (SKILL.md + plantillas + validadores + referencias).</p>
+<div class="stp"><span class="sn">2</span><h4>Descargar los 8 Skills</h4>
+<p>Click en cada botón. Cada uno descarga un ZIP con el skill completo (SKILL.md + plantillas + validadores + referencias). El nuevo skill de speaker notes se suma para convertir cualquier sesión en un centro de comando de presentación.</p>
 <div id="dl-skills" style="margin-top:10px"></div>
 </div>
 
 <div class="stp"><span class="sn">3</span><h4>Instalar los Skills</h4>
 <ol>
 <li>Creá una carpeta: <code>claude-skills/</code></li>
-<li>Extraé los 7 ZIPs dentro (cada uno en su subcarpeta)</li>
+<li>Extraé los 8 ZIPs dentro (cada uno en su subcarpeta)</li>
 <li>Verificá la estructura:</li>
 </ol>
 <div class="cd">claude-skills/
@@ -167,6 +168,10 @@ footer a{color:#A78BFA}
 ├── session-content-builder/
 │   ├── SKILL.md
 │   └── references/     ← Principios pedagógicos, plantillas, checklist
+├── speaker-notes-command-center/
+│   ├── SKILL.md
+│   ├── templates/
+│   └── references/     ← Speaker notes, cues, transiciones, mensajes clave
 ├── exercise-designer/
 │   ├── SKILL.md
 │   └── references/     ← Plantillas profesor/estudiante, checklist
@@ -329,6 +334,23 @@ footer a{color:#A78BFA}
 </div></div>
 </div>
 
+<!-- STEP 3B -->
+<div class="card">
+<h3>🎤 Paso 3B: Construir Speaker Notes como Command Center</h3>
+<div class="flow">
+<div class="nd">1-3 ✓</div><span class="ar">→</span><div class="nd active">3B. Speaker Notes</div><span class="ar">→</span><div class="nd">4. Ejercicios</div><span class="ar">→</span><div class="nd">5. Calificación</div>
+</div>
+<table>
+<tr><th style="width:130px">Skill</th><td><code>speaker-notes-command-center</code></td></tr>
+<tr><th>Qué produce</th><td>Notas de orador · mensajes clave · transiciones · preguntas para la audiencia · checklist de control del ponente</td></tr>
+<tr><th>Tiempo</th><td>~15 min por sesión</td></tr>
+</table>
+<div class="acc"><div class="acc-h" onclick="tgl(this)">📖 Cómo usarlo<span class="t">▼</span></div><div class="acc-b">
+<p>Después de generar una sesión, pegá el contenido y pedí:</p>
+<div class="cd" style="font-size:.9em">Convierte esta sesión en un Speaker Command Center. Quiero notas de orador potentísimas con: mensajes clave, transiciones, cues de voz, preguntas para la audiencia, resumen de cierre y un checklist de control para la presentación.</div>
+</div></div>
+</div>
+
 <!-- STEP 4 -->
 <div class="card">
 <h3>✏️ Paso 4: Crear Ejercicios Prácticos</h3>
@@ -395,8 +417,17 @@ Necesito dos paquetes alineados:
 <div id="ref" class="pnl">
 <h2 style="color:var(--p);margin-bottom:18px">📚 Referencia: Skills y Prompts</h2>
 
-<h3 style="margin:24px 0 12px">🧠 Los 7 Skills</h3>
-<p style="margin-bottom:16px;font-size:.9em;color:#666">Cada skill es un ZIP con: <code>SKILL.md</code> (flujo de trabajo para la IA), plantillas, validadores y referencias pedagógicas.</p>
+<h3 style="margin:24px 0 12px">🧠 Los 8 Skills</h3>
+<p style="margin-bottom:16px;font-size:.9em;color:#666">Cada skill es un ZIP con: <code>SKILL.md</code> (flujo de trabajo para la IA), plantillas, validadores y referencias pedagógicas. El nuevo skill de speaker notes convierte cada sesión en un centro de comando para la presentación.</p>
+<div class="card">
+  <h3>🎤 Speaker Command Center <span class="bg" style="font-size:.75em">speaker-notes-command-center</span></h3>
+  <p>Transforma cualquier sesión en un centro de comando de presentación con speaker notes, mensajes clave, transiciones, cues de voz, preguntas para la audiencia y checklist de cierre.</p>
+  <table style="margin-top:10px">
+    <tr><th style="width:110px">Produce</th><td>Notas de orador, mensajes clave, transiciones, cues de voz, preguntas para la audiencia, checklist de presentación</td></tr>
+    <tr><th>Input</th><td>Sílabo, sesión o contenido de clase</td></tr>
+    <tr><th>Tiempo</th><td>15 min por sesión</td></tr>
+  </table>
+</div>
 <div id="ref-skills"></div>
 
 <h3 style="margin:30px 0 12px">📝 Los 3 Prompts Maestros</h3>
@@ -456,12 +487,19 @@ function renderSkillDLs(containerId){
   const c=document.getElementById(containerId);if(!c)return;
   let h='';
   for(const[n,m]of Object.entries(SM)){
-    const downloadButton = m.downloadUrl
-      ? `<a class="btn bp" href="${m.downloadUrl}" download="${n}.zip" style="white-space:nowrap">📥 Descargar ZIP</a>`
-      : `<button class="btn bp" onclick="dl(SB64['${n}'],'${n}.zip','application/zip')" style="white-space:nowrap">📥 Descargar ZIP</button>`;
+    let action='';
+    if(m.downloadUrl){
+      action=`<a class="btn bp" href="${m.downloadUrl}" download="${n}.zip" style="white-space:nowrap">📥 Descargar ZIP</a>`;
+    } else if(n==='speaker-notes-command-center'){
+      action=`<span class="pill pill-s">Próximamente</span>`;
+    } else if(SB64[n]){
+      action=`<button class="btn bp" onclick="dl(SB64['${n}'],'${n}.zip','application/zip')" style="white-space:nowrap">📥 Descargar ZIP</button>`;
+    } else {
+      action=`<span class="pill pill-s">Próximamente</span>`;
+    }
     h+=`<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:#fff;border:1px solid var(--bd);border-radius:6px;margin:5px 0;flex-wrap:wrap;gap:8px">
       <span style="font-size:.9em"><strong>${m.icon} ${m.title}</strong> <span class="bg">${n}</span></span>
-      ${downloadButton}
+      ${action}
     </div>`;
   }
   c.innerHTML=h;
@@ -486,6 +524,16 @@ function renderSkillRef(){
   let h='';
   for(const[n,m]of Object.entries(SM)){
     const hasPrompt=m.prompt?`<span class="pill pill-s">Prompt: ${PM[m.prompt]?.filename||''}</span>`:'<span class="pill" style="background:#F3F4F6;color:#999">Sin prompt dedicado — usar en chat directo</span>';
+    let action='';
+    if(m.downloadUrl){
+      action=`<a class="btn bp" href="${m.downloadUrl}" download="${n}.zip">📥 Descargar Skill</a>`;
+    } else if(n==='speaker-notes-command-center'){
+      action=`<span class="pill pill-s">Skill en preparación</span>`;
+    } else if(SB64[n]){
+      action=`<button class="btn bp" onclick="dl(SB64['${n}'],'${n}.zip','application/zip')">📥 Descargar Skill</button>`;
+    } else {
+      action=`<span class="pill pill-s">Skill en preparación</span>`;
+    }
     h+=`<div class="card">
       <h3>${m.icon} ${m.title} <span class="bg" style="font-size:.75em">${n}</span></h3>
       <p>${m.desc}</p>
@@ -496,7 +544,7 @@ function renderSkillRef(){
         <tr><th>Prompt</th><td>${hasPrompt}</td></tr>
       </table>
       <div style="margin-top:12px">
-        ${m.downloadUrl?`<a class="btn bp" href="${m.downloadUrl}" download="${n}.zip">📥 Descargar Skill</a>`:`<button class="btn bp" onclick="dl(SB64['${n}'],'${n}.zip','application/zip')">📥 Descargar Skill</button>`}
+        ${action}
         ${m.prompt?`<button class="btn bs" onclick="dl(PB64['${m.prompt}'],'${PM[m.prompt].filename}','text/plain')" style="margin-left:4px">📥 Descargar Prompt</button>`:''}
       </div>
     </div>`;
